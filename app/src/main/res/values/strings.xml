@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Wallpaper Time</string>
+    <string name="search">Search</string>
+    <string name="history">History</string>
+    <string name="favorites">Favorites</string>
+
+    <string name="add_to_favorite">Add to favorite</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_favorites">Favorites</string>
+    <string name="menu_history">History</string>
+
+    <string name="recycler_view_loader_error">Something wrong with connection</string>
+    <string name="recycler_view_button">Retry</string>
+    <string name="display_type">Display type</string>
+    <string name="btn_portfolio">Portfolio</string>
+    <string name="img_info_card_date">Date</string>
+    <string name="img_info_card_color">Color</string>
+    <string name="img_info_card_size">Size</string>
+    <string name="no_instagram">No Instagram</string>
+    <string name="no_twitter">No twitter</string>
+
+    <string name="symbol_at">\@ %s</string>
+    <string name="photo_size_template">Px: %1$s x %2$s</string>
+    <string name="warning_no_insta">No Instagram</string>
+    <string name="warning_no_twitter">No Twitter</string>
+    <string name="btn_clear_history">Clear history</string>
+    <string name="img_ratio">1:1</string>
+
+    <string name="photo_title">%1$s …</string>
+
+    <string name="query_results">%1$s results</string>
+    <string name="query_date_just_now">Just now</string>
+    <string name="query_date_yesterday">Yesterday</string>
+    <string name="query_date_min_ago">%1$s minutes ago</string>
+    <string name="query_date_hours_ago">%1$s hours ago</string>
+
+    <string name="favorite_photo_exists">This photo is already in favorites</string>
+    <string name="favorite_photo_success">Photo added to favorites</string>
+
+    <string name="wallpaper_home_screen">Set as a home screen wallpaper</string>
+    <string name="wallpaper_lock_screen">Set as a lock screen wallpaper</string>
+    <string name="wallpapers_home_success">Home screen wallpapers was changed</string>
+    <string name="wallpapers_lock_success">Lock screen wallpapers was changed</string>
+    <string name="wallpapers_alert_title">Enable to set wallpapers to lock screen</string>
+    <string name="wallpapers_alert_text">You need to update your Android Version</string>
+
+    <string name="user_no_portfolio">User doesn\'t have portfolio</string>
+    <string name="empty_list">Oops, nothing found</string>
+</resources>

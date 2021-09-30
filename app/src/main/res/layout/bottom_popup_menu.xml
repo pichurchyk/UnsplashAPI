@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/set_img_home_screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_click_anim"
+            android:gravity="center"
+            android:paddingTop="@dimen/padding_l"
+            android:paddingBottom="@dimen/padding_l"
+            android:weightSum="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_xl"
+                android:layout_marginEnd="@dimen/margin_xl"
+                android:src="@drawable/ic_image"
+                app:tint="@color/gray" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="start"
+                android:text="@string/wallpaper_home_screen"
+                android:textSize="@dimen/text_m" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/set_img_lock_screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_click_anim"
+            android:gravity="center"
+            android:paddingTop="@dimen/padding_l"
+            android:paddingBottom="@dimen/padding_l"
+            android:weightSum="2"
+            app:layout_constraintTop_toBottomOf="@+id/set_img_home_screen">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_xl"
+                android:layout_marginEnd="@dimen/margin_xl"
+                android:src="@drawable/ic_image"
+                app:tint="@color/gray" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="start"
+                android:text="@string/wallpaper_lock_screen"
+                android:textSize="@dimen/text_m" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/like_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_click_anim"
+            android:gravity="center"
+            android:paddingTop="@dimen/padding_l"
+            android:paddingBottom="@dimen/padding_l"
+            android:weightSum="2"
+            app:layout_constraintTop_toBottomOf="@+id/set_img_lock_screen">
+
+            <ImageView
+                android:id="@+id/like_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_xl"
+                android:layout_marginEnd="@dimen/margin_xl"
+                android:src="@drawable/ic_likes"
+                app:tint="@color/gray" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="start"
+                android:text="@string/add_to_favorite"
+                android:textSize="@dimen/text_m" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

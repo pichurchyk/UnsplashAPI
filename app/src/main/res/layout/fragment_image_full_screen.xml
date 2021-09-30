@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/full_screen_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fullScreenImageFragment.ImageFullScreenFragment">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            tools:ignore="ContentDescription" />
+
+        <include
+            android:id="@+id/load_state"
+            layout="@layout/recycler_adapter_loader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/button_full_screen"
+            android:layout_width="@dimen/floating_button_size"
+            android:layout_height="@dimen/floating_button_size"
+            android:layout_marginTop="@dimen/margin_l"
+            android:layout_marginEnd="@dimen/margin_l"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/ic_full_screen"
+            android:visibility="gone"
+            app:borderWidth="0dp"
+            app:fabCustomSize="@dimen/floating_button_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <LinearLayout
+            android:id="@+id/settings_bar"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/image_settings_height"
+            android:layout_marginStart="@dimen/margin_xl"
+            android:layout_marginEnd="@dimen/margin_xl"
+            android:layout_marginBottom="@dimen/margin_xl"
+            android:background="@drawable/shape_settings_bar"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageButton
+                android:id="@+id/share_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_share" />
+
+            <ImageButton
+                android:id="@+id/options_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_tune" />
+
+            <ImageButton
+                android:id="@+id/info_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_info" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:backgroundTint="@color/white"
+            android:backgroundTintMode="add"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/toolbar_btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="@dimen/text_m" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:id="@+id/blackout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80000000" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/button_hide_info"
+            android:layout_width="@dimen/floating_button_size"
+            android:layout_height="@dimen/floating_button_size"
+            android:layout_marginStart="@dimen/margin_l"
+            android:layout_marginTop="@dimen/margin_l"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/ic_back"
+            android:visibility="gone"
+            app:borderWidth="0dp"
+            app:fabCustomSize="@dimen/floating_button_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="bottom_menu_height">66dp</dimen>
+
+    <dimen name="radius_s">4dp</dimen>
+    <dimen name="radius_m">16dp</dimen>
+    <dimen name="radius_l">20dp</dimen>
+    <dimen name="radius_xl">30dp</dimen>
+
+
+    <dimen name="margin_s">6dp</dimen>
+    <dimen name="margin_m">10dp</dimen>
+    <dimen name="margin_l">16dp</dimen>
+    <dimen name="margin_xl">32dp</dimen>
+    <dimen name="margin_xxl">60dp</dimen>
+
+
+    <dimen name="padding_s">4dp</dimen>
+    <dimen name="padding_m">8dp</dimen>
+    <dimen name="padding_l">16dp</dimen>
+    <dimen name="padding_xl">24dp</dimen>
+    <dimen name="padding_bottom_recycler_view">66dp</dimen>
+
+
+    <dimen name="text_s">12sp</dimen>
+    <dimen name="text_m">16sp</dimen>
+    <dimen name="text_l">20sp</dimen>
+    <dimen name="text_xxl">40sp</dimen>
+
+
+    <dimen name="recycler_view_loader">30dp</dimen>
+
+    <dimen name="floating_button_size">50dp</dimen>
+
+    <dimen name="image_settings_height">64dp</dimen>
+    <dimen name="img_info_cards_size">120dp</dimen>
+</resources>

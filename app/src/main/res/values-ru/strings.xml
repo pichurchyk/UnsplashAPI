@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Wallpaper Time</string>
+    <string name="search">Поиск</string>
+    <string name="history">История</string>
+    <string name="favorites">Избранное</string>
+    <string name="add_to_favorite">Добавить в избранное</string>
+    <string name="menu_search">Поиск</string>
+    <string name="menu_favorites">Избранное</string>
+    <string name="menu_history">История</string>
+
+    <string name="recycler_view_loader_error">Проблемы с соединением</string>
+    <string name="recycler_view_button">Повтор</string>
+    <string name="display_type">Display type</string>
+    <string name="btn_portfolio">Портфолио</string>
+    <string name="img_info_card_date">Дата</string>
+    <string name="img_info_card_color">Цвет</string>
+    <string name="img_info_card_size">Размер</string>
+    <string name="no_instagram">Нет инстаграмма</string>
+    <string name="no_twitter">Нет твиттера</string>
+
+    <string name="photo_title">%1$s …</string>
+
+    <string name="symbol_at">\@ %s</string>
+    <string name="photo_size_template">Px: %1$s x %2$s</string>
+    <string name="warning_no_insta">No Instagram</string>
+    <string name="warning_no_twitter">No Twitter</string>
+    <string name="btn_clear_history">Очистить историю</string>
+    <string name="img_ratio">1:1</string>
+
+    <string name="query_results">%1$s результата</string>
+    <string name="query_date_just_now">Только что</string>
+    <string name="query_date_yesterday">Вчера</string>
+    <string name="query_date_min_ago">%1$s минут назад</string>
+    <string name="query_date_hours_ago">%1$s часов назад</string>
+
+    <string name="favorite_photo_exists">Это фото уже в избранном</string>
+    <string name="favorite_photo_success">Фото добавлено в избранное</string>
+
+    <string name="wallpaper_home_screen">Поставить как обои рабочего стола</string>
+    <string name="wallpaper_lock_screen">Поставить как обои экрана блокировки</string>
+    <string name="wallpapers_home_success">Обои рабочего стола изменены</string>
+    <string name="wallpapers_lock_success">Обои экрана блокировки изменены</string>
+    <string name="wallpapers_alert_title">Невозможно установить обои экрана блокировки</string>
+    <string name="wallpapers_alert_text">Вам необходимо обновить версию Android</string>
+
+    <string name="user_no_portfolio">У пользователя нет портфолио</string>
+
+    <string name="empty_list">Кажется, список пуст</string>
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/loadingFragment">
+
+    <fragment
+        android:id="@+id/loadingFragment"
+        android:name="com.example.pichurchyk_p3.ui.LoadingFragment"
+        android:label="LoadingFragment" >
+        <action
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/main_nav_graph"
+            android:id="@+id/action_loadingFragment_to_wallpapersFeedFragment"
+            app:destination="@id/wallpapersFeedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wallpapersFeedFragment"
+        android:name="com.example.pichurchyk_p3.ui.feedFragment.WallpapersFeedFragment"
+        android:label="WallpappersFeedFragment" >
+        <action
+            android:id="@+id/action_wallpapersFeedFragment_to_imageFullScreenFragment"
+            app:destination="@id/imageFullScreenFragment" />
+        <argument
+            android:name="query"
+            app:argType="string"
+            android:defaultValue=""/>
+    </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.pichurchyk_p3.ui.historyFragment.HistoryFragment"
+        android:label="HistoryFragment" >
+        <action
+            android:id="@+id/action_historyFragment_to_wallpapersFeedFragment"
+            app:destination="@id/wallpapersFeedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.example.pichurchyk_p3.ui.favoritesFragment.FavoritesFragment"
+        android:label="FavoritesFragment" >
+        <action
+            android:id="@+id/action_favoritesFragment_to_imageFullScreenFragment"
+            app:destination="@id/imageFullScreenFragment" />
+        <action
+            android:id="@+id/action_favoritesFragment_to_wallpapersFeedFragment"
+            app:destination="@id/wallpapersFeedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imageFullScreenFragment"
+        android:name="com.example.pichurchyk_p3.ui.fullScreenImageFragment.ImageFullScreenFragment"
+        android:label="ImageFullScreenFragment" >
+        <argument
+            android:name="photo"
+            app:argType="com.example.pichurchyk_p3.model.UnsplashPhoto" />
+        <argument
+            android:name="queryName"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_imageFullScreenFragment_to_wallpapersFeedFragment"
+            app:destination="@id/wallpapersFeedFragment" />
+        <action
+            android:id="@+id/action_imageFullScreenFragment_to_favoritesFragment"
+            app:destination="@id/favoritesFragment" />
+        <action
+            android:id="@+id/action_imageFullScreenFragment_to_browserFragment"
+            app:destination="@id/browserFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/browserFragment"
+        android:name="com.example.pichurchyk_p3.ui.BrowserFragment"
+        android:label="BrowserFragment" >
+        <argument
+            android:name="url"
+            app:argType="string" />
+    </fragment>
+</navigation>
